@@ -1,19 +1,19 @@
-nt compare(void* num1, void* num2)
+int compare(void* num1, void* num2)
 {
     DWORD _err = GetLastError();
-    int x = 0;
-    int* v;
-    v = &x;
+    
     if (_err == 1)
     {
        std::cout << " Error  " << std::endl;
 
     }
-    else  if (num1 < num2) {
+    else  if (num1 < num2)
+    {
         return 11;
     }
 
-    else if (num1 > num2) {
+    else if (num1 > num2) 
+    {
         return 22;
     }
 
@@ -23,5 +23,4 @@ nt compare(void* num1, void* num2)
         return 33;
     }
     
-
 }
